@@ -1,0 +1,27 @@
+body {
+  padding-top: 50px;
+  margin-bottom: -20px;
+}
+
+/*
+ * Footer.
+ *
+ * Content at bottom of all pages.
+ */
+.footer {
+  border-top: 1px solid #e5e5e5;
+  color: #777;
+  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.footer .social a {
+  text-decoration: none;
+}
+
+.footer .social i {
+  font-size: 150%;
+  margin: 5px;
+}
