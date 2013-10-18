@@ -1,16 +1,15 @@
 body {
   padding-top: 50px;
-  margin-bottom: -20px;
+  margin-bottom: -21px;
 }
 
-/*
- * Footer.
- *
- * Content at bottom of all pages.
- */
+#courses .btn-lg {
+  padding: 18px;
+}
+
 .footer {
-  border-top: 1px solid #e5e5e5;
-  color: #777;
+  border-radius: 0px;
+  color: white;
   margin-top: 25px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -23,5 +22,16 @@ body {
 
 .footer .social i {
   font-size: 150%;
-  margin: 5px;
+  margin: 4px;
+}
+
+.jumbotron {
+  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 0 10px black;
+}
+
+.video {
+  height: 315px;
+  padding-bottom: 15px;
+  width: 100%;
 }
