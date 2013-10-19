@@ -3,12 +3,12 @@ body {
   margin-bottom: -21px;
 }
 
-#courses .btn-lg {
-  padding: 18px;
-}
-
 #courses h3 {
   margin-bottom: 21px;
+}
+
+#courses .btn-lg {
+  padding: 18px;
 }
 
 .footer {
