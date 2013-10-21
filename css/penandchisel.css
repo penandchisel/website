@@ -1,6 +1,13 @@
-body {
-  padding-top: 50px;
-  margin-bottom: -21px;
+body, html {
+  height: 100%;
+}
+
+#content .blockquote-final {
+  margin-bottom: 4px;
+}
+
+#content .ol-final {
+  margin-bottom: -10.5px;
 }
 
 #courses h3 {
@@ -11,34 +18,66 @@ body {
   padding: 18px;
 }
 
-.footer {
-  border-radius: 0px;
+#footer {
   color: white;
-  margin-top: 25px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  height: 98px;
   text-align: center;
 }
 
-.footer .social a {
+#footer .navbar {
+  border-radius: 0px;
+  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#footer .social a {
   text-decoration: none;
 }
 
-.footer .social i {
+#footer .social i {
   font-size: 150%;
   margin: 4px;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -118px;  /* Negative indent for footer. */
+  padding: 0 0 118px;  /* Pad so footer doesn't overlap content. */
+}
+
+#wrap > #content {
+  padding-top: 50px;  /* Pad so header doesn't overlap content. */
 }
 
 .jumbotron {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.legal ol {
-  margin-bottom: -10.5px;
+.jumbotron .video {
+  max-width: 500px;
 }
 
 .video {
   height: 315px;
   padding-bottom: 15px;
   width: 100%;
+}
+
+div.row {
+  border: 1px;
+}
+
+.background {
+  display: inline;
+  font-size: 5000%;
+  max-height: 500px;
+  left: 0;
+  top: -100px;
+  opacity: 0.25;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
