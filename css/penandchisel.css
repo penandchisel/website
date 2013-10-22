@@ -66,18 +66,6 @@ body, html {
   width: 100%;
 }
 
-div.row {
-  border: 1px;
-}
-
-.background {
-  display: inline;
-  font-size: 5000%;
-  max-height: 500px;
-  left: 0;
-  top: -100px;
-  opacity: 0.25;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
+a.feedback {
+  cursor: pointer;
 }

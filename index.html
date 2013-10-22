@@ -39,7 +39,7 @@
                   <a href="/company.html">Company</a>
                 </li>
                 <li>
-                  <a href="/contact.html">Contact</a>
+                  <a href="mailto:tickets@penandchisel.uservoice.com" data-uv-trigger>Contact</a>
                 </li>
                 <li>
                   <a href="http://blog.penandchisel.com">Blog</a>
@@ -206,6 +206,7 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
+      // Twitter.
       !function(d,s,id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         var p = /^http:/.test(d.location) ? 'http':'https';
@@ -216,6 +217,21 @@
           fjs.parentNode.insertBefore(js,fjs);
         }
       }(document,"script","twitter-wjs");
+
+      // UserVoice.
+      var UserVoice = window.UserVoice || [];
+      (function() {
+        var uv = document.createElement('script');
+        uv.type = 'text/javascript';
+        uv.async= true;
+        uv.src = 'http://widget.uservoice.com/TqEopgbbxz14Tc0kQFN8WQ.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(uv, s);
+      })();
+      UserVoice.push(['set', {
+          accent_color: '#18bc9c',
+          trigger_color: 'white'
+      }]);
     </script>
 
   <!--
