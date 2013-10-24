@@ -14,6 +14,11 @@ body, html {
   margin-bottom: 21px;
 }
 
+#courses h3 a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
 #courses .btn-lg {
   padding: 18px;
 }
