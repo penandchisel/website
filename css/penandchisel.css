@@ -28,6 +28,12 @@ body, html {
   padding: 18px;
 }
 
+#custom-search-engine input.gsc-search-button {
+  background: #18BC9C url('http://www.google.com/uds/css/v2/search_box_icon.png') no-repeat 21px 8px;
+  height: 29px;
+  width: 50px;
+}
+
 #footer {
   color: white;
   height: 97px;
