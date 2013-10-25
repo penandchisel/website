@@ -168,12 +168,21 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-6"><h2><i class="icon-chevron-up text-success"></i> From our blog</h2></div>
+            <div class="col-md-6"><h2><a href="http://blog.penandchisel.com"><i class="icon-chevron-up text-success"></i> From our blog</a></h2>
+              <div id="blog-container">
+                <h4>Recent entries</h4>
+                <hr/>
+                <div id="blog-content">
+                </div>
+                <hr/>
+                <p class="text-center"><a href="http://blog.penandchisel.com">View more</a></p>
+              </div>
+            </div>
             <div class="col-md-6">
-              <h2><i class="icon-chevron-up text-success"></i> On Twitter</h2>
+              <h2><a href="https://twitter.com/penandchisel"><i class="icon-chevron-up text-success"></i> On Twitter</a></h2>
               <a
                   class="twitter-timeline"
-                  data-chrome="nofooter"
+                  data-chrome="noborders nofooter"
                   data-link-color="#18bc9c"
                   data-widget-id="390971512196300800"
                   height="300"
@@ -211,7 +220,59 @@
 
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.rss.min.js"></script>
     <script>
+      // Blog recent entries.
+      (function() {
+        var _ENTRY_TEMPLATE =
+            '<div class="media">' +
+              '<a href="{url}">' +
+                '<div class="row">' +
+                  '<div class="col-md-2">' +
+                    '<i class="{icon}"></i>' +
+                  '</div>' +
+                '<div class="col-md-10">' +
+                  '<div class="media-body"> ' +
+                    '<p class="text-primary"><strong>{title}</strong></p>' +
+                    '<p class="text-primary">{formattedDate}</p>' +
+                  '</div>' +
+                '</div>'
+              '</a>' +
+            '</div>';
+        var _ICONS = [
+            'icon-asterisk',
+            'icon-bell',
+            'icon-coffee',
+            'icon-leaf',
+            'icon-sun',
+        ];
+        var _PNC_FEED_URL = 'http://blog.penandchisel.com/?feed=rss2';
+
+        function getDate(entry) {
+          var date = new Date(entry.publishedDate);
+          return date.getFullYear() + '/' + date.getMonth() + '/' + date.getDate();
+        }
+
+        function getIcon() {
+          var i = Math.floor(Math.random() * _ICONS.length);
+          var name = _ICONS[i];
+          _ICONS.splice(i, 1);
+          return name;
+        }
+
+        jQuery(function($) {
+          $('#blog-content').rss(_PNC_FEED_URL, {
+            'entryTemplate': _ENTRY_TEMPLATE,
+            'layoutTemplate': '<div>{entries}</div>`',
+            'limit': 5,
+            'tokens': {
+                'formattedDate': function(entry, tokens) { return getDate(entry); },
+                'icon': function(entry, tokens) { return getIcon(); }
+            }
+          });
+        })
+      })();
+
       // Twitter.
       !function(d,s,id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -247,6 +308,7 @@
   * Bootswatch's Flatly theme for colors - http://bootswatch.com/.
   * Font Awesome by Dave Gandy for icons - http://fontawesome.io/.
   * jQuery for scripting - http://http://jquery.com/.
+  * jquery-rss for RSS parsing - https://github.com/sdepold/jquery-rss/.
 
   Thanks, everyone!
   -->
