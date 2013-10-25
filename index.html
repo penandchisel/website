@@ -57,7 +57,7 @@
                   class="text-muted">Writing law school admissions essays is hard.</span>
                   We're here to help.</h3>
             <p class="text-center">
-              <a class="btn btn-lg btn-primary" href="#courses"><i class="icon-arrow-down"></i> Learn more</a></p>
+              <a class="btn btn-lg btn-primary" href="#courses"><i class="fa fa-lg fa-arrow-down"></i> Learn more</a></p>
           </div>
         </div>
 
@@ -84,15 +84,15 @@
 
           <div class="container">
             <h2 class="text-center">
-              <span class="icon-stack">
-                <i class="icon-unchecked icon-stack-base"></i>
-                <i class="icon-cloud text-success"></i>
+              <span class="fa-stack text-left">
+                <i class="fa fa-stack-2x fa-square-o"></i>
+                <i class="fa fa-stack-1x fa-cloud text-success"></i>
               </span>
               Online courses</h2>
           </div>
 
           <div class="container">
-            <h3><a href="/launch.html"><i class="icon-chevron-up text-success"></i> Launch: Personal Statement</a></h3>
+            <h3><a href="/launch.html"><i class="fa fa-chevron-up text-success"></i> Launch: Personal Statement</a></h3>
             <div class="row">
               <div class="col-md-6">
                 <p class="lead">Jump-start your law school application essay</p>
@@ -115,7 +115,7 @@
                       class="btn btn-lg btn-primary"
                       onclick="window.location='https://ruzuku.com/courses/2961/enroll';"
                       type="button">
-                  <i class="icon-shopping-cart"></i> Buy now</button>
+                  <i class="fa fa-lg fa-shopping-cart"></i> Buy now</button>
                   <button
                       class="btn btn-lg btn-primary"
                       onclick="window.location='/launch.html';"
@@ -126,7 +126,7 @@
 
             <hr width="70%"/>
 
-            <h3><a href="/refine.html"><i class="icon-chevron-up text-success"></i> Refine: Personal Statement</a></h3>
+            <h3><a href="/refine.html"><i class="fa fa-chevron-up text-success"></i> Refine: Personal Statement</a></h3>
             <div class="row">
               <div class="col-md-6 col-md-push-6">
                 <p class="lead">Make your law school personal statement shine!</p>
@@ -150,7 +150,7 @@
                       class="btn btn-lg btn-primary"
                       onclick="window.location='https://ruzuku.com/courses/2370/enroll';"
                       type="button">
-                  <i class="icon-shopping-cart"></i> Buy now</button>
+                  <i class="fa fa-lg fa-shopping-cart"></i> Buy now</button>
                   <button
                       class="btn btn-lg btn-primary"
                       onclick="window.location='/refine.html';"
@@ -168,7 +168,7 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-6"><h2><a href="http://blog.penandchisel.com"><i class="icon-chevron-up text-success"></i> From our blog</a></h2>
+            <div class="col-md-6"><h2><a href="http://blog.penandchisel.com"><i class="fa fa-chevron-up text-success"></i> From our blog</a></h2>
               <div id="blog-container">
                 <h4>Recent entries</h4>
                 <hr/>
@@ -179,7 +179,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <h2><a href="https://twitter.com/penandchisel"><i class="icon-chevron-up text-success"></i> On Twitter</a></h2>
+              <h2><a href="https://twitter.com/penandchisel"><i class="fa fa-chevron-up text-success"></i> On Twitter</a></h2>
               <a
                   class="twitter-timeline"
                   data-chrome="noborders nofooter"
@@ -200,14 +200,14 @@
         <div class="container social">
           <div class="text-center">
             Follow us on
-            <a href="http://twitter.com/penandchisel"><i class="icon-twitter"></i></a>
-            <a href="http://www.youtube.com/user/penandchisel"><i class="icon-youtube"></i></a>
-            <a href="https://plus.google.com/b/102875487205961248073/102875487205961248073/posts"><i class="icon-google-plus-sign"></i></a>
-            <a href="http://feeds.feedburner.com/penandchisel/cHnG"><i class="icon-rss"></i></a>
+            <a href="http://twitter.com/penandchisel"><i class="fa fa-twitter"></i></a>
+            <a href="http://www.youtube.com/user/penandchisel"><i class="fa fa-youtube"></i></a>
+            <a href="https://plus.google.com/b/102875487205961248073/102875487205961248073/posts"><i class="fa fa-google-plus-square"></i></a>
+            <a href="http://feeds.feedburner.com/penandchisel/cHnG"><i class="fa fa-rss"></i></a>
 
             or subscribe to our email list
 
-            <a href="http://penandchisel.us7.list-manage.com/subscribe?u=bc9c37a74ddff05fbe8a933a9&id=93cd9b4ab3"><i class="icon-envelope"></i></a>
+            <a href="http://penandchisel.us7.list-manage.com/subscribe?u=bc9c37a74ddff05fbe8a933a9&id=93cd9b4ab3"><i class="fa fa-envelope"></i></a>
           </div>
         </div>
 
@@ -227,24 +227,19 @@
         var _ENTRY_TEMPLATE =
             '<div class="media">' +
               '<a href="{url}">' +
-                '<div class="row">' +
-                  '<div class="col-xs-2">' +
-                    '<i class="{icon}"></i>' +
-                  '</div>' +
-                '<div class="col-xs-10">' +
-                  '<div class="media-body"> ' +
-                    '<p class="text-primary"><strong>{title}</strong></p>' +
-                    '<p class="text-primary">{formattedDate}</p>' +
-                  '</div>' +
-                '</div>'
+                '<i class="fa fa-fw fa-3x {icon} pull-left"></i>' +
+                '<div class="media-body"> ' +
+                  '<p class="text-primary"><strong>{title}</strong></p>' +
+                  '<p class="text-primary">{formattedDate}</p>' +
+                '</div>' +
               '</a>' +
             '</div>';
         var _ICONS = [
-            'icon-asterisk',
-            'icon-bell',
-            'icon-coffee',
-            'icon-leaf',
-            'icon-sun',
+            'fa-asterisk',
+            'fa-bell',
+            'fa-coffee',
+            'fa-leaf',
+            'fa-sun-o',
         ];
         var _PNC_FEED_URL = 'http://blog.penandchisel.com/?feed=rss2';
 
