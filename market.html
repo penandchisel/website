@@ -111,6 +111,7 @@
 
       // UserVoice.
       var UserVoice = window.UserVoice || [];
+
       (function() {
         var uv = document.createElement('script');
         uv.type = 'text/javascript';
@@ -119,6 +120,7 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(uv, s);
       })();
+
       UserVoice.push(['set', {
           accent_color: '#18bc9c',
           trigger_color: 'white'
