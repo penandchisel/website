@@ -1,4 +1,4 @@
 website
 =======
 
-New website for penandchisel.com.
+Website for [Pen and Chisel](http://www.penandchisel.com).
