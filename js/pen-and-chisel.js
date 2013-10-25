@@ -33,7 +33,7 @@
   $(function($) {
     $('#blog-content').rss(_PNC_FEED_URL, {
       'entryTemplate': _ENTRY_TEMPLATE,
-      'layoutTemplate': '<div>{entries}</div>`',
+      'layoutTemplate': '<div>{entries}</div>',
       'limit': 5,
       'tokens': {
           'formattedDate': function(entry, tokens) { return getDate(entry); },
