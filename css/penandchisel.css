@@ -36,11 +36,12 @@ body, html {
 
 #footer {
   color: white;
-  height: 97px;
+  height: 95px;
   text-align: center;
 }
 
 #footer .navbar {
+  border: none;
   border-radius: 0px;
   margin-top: 25px;
   padding-top: 25px;
@@ -54,6 +55,10 @@ body, html {
 #footer .social i {
   font-size: 150%;
   margin: 0 4px;
+}
+
+#header .navbar {
+  border: none;
 }
 
 #wrap {
