@@ -16,7 +16,7 @@
       'fa-coffee',
       'fa-leaf',
   ];
-  var _PNC_FEED_URL = 'http://blog.penandchisel.com/?feed=rss2';
+  var _PNC_FEED_URL = 'http://blog.penandchisel.com/feed/';
 
   function getDate(entry) {
     var date = new Date(entry.publishedDate);
