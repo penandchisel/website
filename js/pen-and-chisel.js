@@ -21,7 +21,8 @@
   function getDate(entry) {
     var date = new Date(entry.publishedDate);
     return (
-	date.getFullYear() + '/' + date.getMonth() + 1 + '/' + date.getDate());
+        date.getFullYear() + '/' + (date.getMonth() + 1) +
+        '/' + date.getDate());
   }
 
   function getIcon() {
