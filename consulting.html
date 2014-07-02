@@ -65,7 +65,7 @@
                 <li>
                   <a href="/courses">Courses</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="/consulting">Consulting</a>
                 </li>
                 <li>
@@ -84,17 +84,54 @@
       </div>
 
       <div id="content">
-        <div class="container">
-          <h2>
+        <div class="consulting container">
+          <h2 class="text-center">
             <span class="fa-stack text-left">
-              <i class="fa fa-stack-2x fa-square"></i>
-              <i class="fa fa-stack-1x fa-lg fa-exclamation text-warning"></i>
-            </span>404: Not Found</h2>
-          <h3>Oh no! We couldn't find the page you asked for.</h3>
-          <h3>Maybe you'd like to search for it?</h3>
-          <div id="custom-search-engine" class="text-center">
-            <gcse:search enableAutocomplete="true"></gcse:search>
-          </div>
+              <i class="fa fa-stack-2x fa-square-o"></i>
+              <i class="icon-up fa fa-stack-1x fa-comments text-success"></i>
+            </span>
+            Consulting</h2>
+
+          <h3><i class="fa fa-chevron-up text-success"></i> One-on-one essay advice with our <strong>Personalized Consulting Package</strong></h3>
+
+          <p class="lead"><strong>$350</strong></p>
+
+          <form
+              action="mailto:hello@penandchisel.com"
+              id="personal-consulting-email"
+              method="GET"
+              target="_blank">
+            <input type="hidden" name="subject" value="Personalized Consulting Package"></input>
+            <button
+                class="btn btn-lg btn-primary"
+                onclick="document.getElementById('personal-consulting-email').submit();"
+                type="button">
+              <i class="fa fa-lg fa-envelope"></i> Email for details</button>
+          </form>
+
+          <p>You get:</p>
+
+          <ul>
+            <li><strong>Personalized feedback</strong> on one completed draft of a law school personal statement, diversity statement, or other application essay.</li>
+            <li>One <strong>half-hour phone consultation</strong> to discuss editorial suggestions, ask questions, and address any concerns you may have.</li>
+            <li>A <strong>written report</strong> analyzing the strongest parts of your argument and discussing how to improve weaker points.</li>
+            <li>A <strong>detailed checklist</strong> of the steps you need to take to dramatically improve your essay.</li>
+          </ul>
+
+          <p>If you have an essay draft in hand and you want specific, individualized pointers about how you can best improve it, our essay consulting service is for you.</p>
+
+          <h3><i class="fa fa-chevron-up text-success"></i> Why personalized consulting?</h3>
+
+          <p>Learn the strongest and weakest points of your essay and receive concrete guidance on exactly what to do to make the strongest argument possible for admission to law school.</p>
+
+          <p>You'll be working directly with me, Eileen Conner, founder of Pen and Chisel. I've helped hundreds of prospective law students turn a critical eye on their personal statements, diversity statements, and addenda&mdash;and given them the specific feedback they need to create a truly convincing argument for admission to law school.</p>
+
+          <p>I've helped students hone their arguments for admission to prominent law schools all over the country, including Berkeley, Notre Dame, the University of Michigan, North Carolina Central University, the University of Arizona, NYU, and many more. <a href="/company">Read more about me</a>.</p>
+
+          <p>While rush services may be available on a case-by-case basis, it's always a good idea to get your application essays finished in advance. I recommend that you submit your finished essay draft for consultation as early in the application process as possible.</p>
+
+          <p><a href="mailto:hello@penandchisel.com?subject=Personalized%20Consulting%20Package" target="_blank">Mail me at <strong>hello@penandchisel.com</strong></a> to inquire about availability and purchase our <strong>Personalized Consulting Package</strong>.</p>
+
         </div>
       </div>
 
@@ -141,18 +178,6 @@
             '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(ga, s);
-      })();
-
-      // Google Custom Search Engine.
-      (function() {
-        var cx = '002606699130529310767:fwvpdol8ztk';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//www.google.com/cse/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
       })();
 
       // UserVoice.

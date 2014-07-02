@@ -74,9 +74,21 @@ body, html {
   padding-top: 50px;  /* Pad so header doesn't overlap content. */
 }
 
+.consulting .btn-lg {
+  margin-bottom: 21px;
+}
+
+.consulting p:last-child {
+  margin-bottom: 0px;
+}
+
 .container h2 a, .container h3 a {
   color: #2c3e50;
   text-decoration: none;
+}
+
+.icon-up {
+  margin-top: -3px;
 }
 
 .jumbotron {
