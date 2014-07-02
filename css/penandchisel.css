@@ -12,6 +12,20 @@ body, html {
   text-decoration: none;
 }
 
+#consulting-image {
+  background-image: url('/images/consulting.png');
+  background-size: cover;
+  height: 300px;
+  margin-bottom: 21px;
+  width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    #consulting-image {
+        background-image: url('/images/consulting@2x.png');
+    }
+}
+
 #content .blockquote-final {
   margin-bottom: 4px;
 }
@@ -93,6 +107,11 @@ body, html {
 
 .jumbotron {
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 44px;  /* Offset btn-lg bottom margin. */
+}
+
+.jumbotron .btn-lg {
+  margin-bottom: 4px;
 }
 
 .jumbotron .video {
